@@ -1,0 +1,11 @@
+observed_at,station,temperature_c,humidity_percent,rain_mm,alert
+2026-06-01,Dhaka North,32.4,71,0,false
+2026-06-02,Dhaka North,33.1,69,0,false
+2026-06-03,Dhaka North,31.8,77,8.2,true
+2026-06-04,Dhaka North,30.6,82,19.5,true
+2026-06-05,Dhaka North,32.0,74,2.1,false
+2026-06-01,Chattogram Port,30.2,80,5.4,false
+2026-06-02,Chattogram Port,29.8,84,14.7,true
+2026-06-03,Chattogram Port,30.5,81,7.9,false
+2026-06-04,Chattogram Port,,86,25.3,true
+2026-06-05,Chattogram Port,31.1,79,3.8,false

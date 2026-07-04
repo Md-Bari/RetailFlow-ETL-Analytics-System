@@ -11,6 +11,7 @@ from ..services.etl_service import run_etl
 
 router = APIRouter(tags=["ETL upload"])
 UPLOAD_DIR = Path(__file__).resolve().parents[2] / "uploads"
+MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -21,8 +22,12 @@ async def upload_csv(file: UploadFile = File(...), db: Session = Depends(get_db)
     safe_name = re.sub(r"[^A-Za-z0-9._-]", "_", Path(file.filename).name)
     stored_path = UPLOAD_DIR / f"{uuid4().hex}_{safe_name}"
     try:
+        size = 0
         async with aiofiles.open(stored_path, "wb") as destination:
             while chunk := await file.read(1024 * 1024):
+                size += len(chunk)
+                if size > MAX_UPLOAD_BYTES:
+                    raise ValueError("The CSV exceeds the 25 MB upload limit.")
                 await destination.write(chunk)
         result = run_etl(stored_path, safe_name, db)
         return {"message": "CSV processed successfully.", "result": result}

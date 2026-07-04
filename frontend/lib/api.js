@@ -11,11 +11,6 @@ async function request(path, options) {
 }
 
 export function uploadCsv(file) { const data = new FormData(); data.append("file", file); return request("/api/upload", { method: "POST", body: data }); }
-export const getSummary = () => request("/api/dashboard/summary");
-export const getMonthlySales = () => request("/api/dashboard/monthly-sales");
-export const getCategorySales = () => request("/api/dashboard/category-sales");
-export const getCitySales = () => request("/api/dashboard/city-sales");
-export const getPaymentMethods = () => request("/api/dashboard/payment-methods");
-export const getTopProducts = () => request("/api/dashboard/top-products");
+export const getDatasets = () => request("/api/datasets");
+export const getDatasetProfile = id => request(`/api/datasets/${id}/profile`);
 export const getLogs = () => request("/api/logs");
-export const getFailedRecords = () => request("/api/failed-records");

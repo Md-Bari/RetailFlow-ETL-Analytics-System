@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const links = [
   ["/", "Overview"], ["/upload", "Upload"], ["/dashboard", "Dashboard"],
-  ["/logs", "ETL logs"], ["/failed-records", "Failed records"],
+  ["/logs", "ETL logs"], ["/failed-records", "Data quality"],
 ];
 
 export default function Navbar() {

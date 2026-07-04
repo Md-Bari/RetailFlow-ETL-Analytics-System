@@ -6,11 +6,11 @@ product
 
 ## Users
 
-Data engineers, analysts, and portfolio reviewers who need to ingest retail CSV exports, inspect data quality, and understand sales performance from one operational workspace.
+Analysts, data engineers, students, and portfolio reviewers who need to understand unfamiliar CSV datasets without first writing a custom schema or dashboard.
 
 ## Product Purpose
 
-RetailFlow turns inconsistent retail sales files into traceable, analytics-ready PostgreSQL data. Success means an upload can be followed from raw input through validation and transformation to trustworthy KPIs, while rejected records remain visible and actionable.
+RetailFlow turns arbitrary CSV files into traceable PostgreSQL datasets and explainable statistical profiles. Success means any well-formed CSV can be uploaded, inspected for quality, and explored through analyses selected from its inferred numeric, categorical, date, boolean, and text columns.
 
 ## Brand Personality
 

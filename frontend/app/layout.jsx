@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "RetailFlow ETL Analytics",
-  description: "Traceable retail data ingestion and analytics.",
+  description: "Automatic profiling and analytics for arbitrary CSV datasets.",
 };
 
 export default function RootLayout({ children }) {
