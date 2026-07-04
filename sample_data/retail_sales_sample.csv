@@ -1,0 +1,56 @@
+order_id,order_date,customer_name,customer_email,product,category,quantity,unit_price,discount,payment_method,city,status
+RF-1001,2025-01-04,Amina Rahman,amina@example.com,Wireless Mouse,Electronics,2,24.99,0,card,Dhaka,completed
+RF-1002,2025-01-08,Tanvir Hasan,tanvir@example.com,Desk Lamp,Home,1,45.00,5,cash,Chattogram,Completed
+RF-1003,2025-01-13,Nusrat Jahan,nusrat@example.com,Running Shoes,Fashion,1,89.50,,mobile_banking,Dhaka,COMPLETED
+RF-1004,2025-01-19,Rafi Ahmed,rafi@example.com,Notebook Set,Stationery,3,12.00,2,card,Sylhet,pending
+RF-1005,2025-01-26,Sadia Islam,sadia@example.com,Coffee Maker,Home,1,79.99,10,cash,Rajshahi,Completed
+RF-1006,2025-02-02,Imran Khan,imran@example.com,USB-C Hub,Electronics,2,39.50,0,card,Dhaka,Completed
+RF-1007,2025-02-07,Farzana Akter,farzana@example.com,Backpack,Fashion,1,54.00,4,mobile-banking,Khulna,completed
+RF-1008,2025-02-13,Mahmud Alam,mahmud@example.com,Water Bottle,Home,4,15.25,0,cash,Barishal,Pending
+RF-1009,2025-02-18,Tasnia Noor,tasnia@example.com,Keyboard,Electronics,1,68.00,8,card,Dhaka,Completed
+RF-1010,2025-02-25,Sabbir Hossain,sabbir@example.com,Office Chair,Furniture,1,220.00,20,bank_transfer,Chattogram,Completed
+RF-1011,2025-03-03,Rumana Sultana,rumana@example.com,Pen Pack,Stationery,5,6.50,0,cash,Rangpur,completed
+RF-1012,2025-03-09,Arif Chowdhury,arif@example.com,Monitor Stand,Furniture,1,58.00,,card,Dhaka,Pending
+RF-1013,2025-03-15,Maliha Karim,maliha@example.com,Smart Watch,Electronics,1,129.99,15,mobile_banking,Sylhet,Completed
+RF-1014,2025-03-20,Shakil Mia,shakil@example.com,T-Shirt,Fashion,3,19.99,5,cash,Cumilla,COMPLETED
+RF-1015,2025-03-29,Sumaiya Haque,sumaiya@example.com,Floor Mat,Home,2,29.00,0,card,Dhaka,Pending
+RF-1016,2025-04-05,Nayeem Islam,nayeem@example.com,Webcam,Electronics,1,74.50,0,card,Chattogram,Completed
+RF-1017,2025-04-11,Faria Zaman,faria@example.com,Desk Organizer,Stationery,2,18.00,1,cash,Dhaka,completed
+RF-1018,2025-04-17,Asif Mahmud,asif@example.com,Standing Desk,Furniture,1,399.00,35,bank_transfer,Rajshahi,Completed
+RF-1019,2025-04-23,Mehjabin Ahmed,mehjabin@example.com,Sunglasses,Fashion,1,42.50,,card,Khulna,Pending
+RF-1020,2025-04-28,Jubayer Ali,jubayer@example.com,Electric Kettle,Home,2,35.00,5,mobile_banking,Dhaka,Completed
+RF-1021,2025-05-02,Sharmin Yasmin,sharmin@example.com,Headphones,Electronics,1,95.00,10,card,Sylhet,Completed
+RF-1022,2025-05-08,Adnan Kabir,adnan@example.com,Sketchbook,Stationery,3,11.00,0,cash,Dhaka,pending
+RF-1023,2025-05-14,Lamia Ferdous,lamia@example.com,Bookshelf,Furniture,1,175.00,15,bank_transfer,Chattogram,Completed
+RF-1024,2025-05-21,Rakib Hasan,rakib@example.com,Hoodie,Fashion,2,44.00,4,card,Rangpur,completed
+RF-1025,2025-05-30,Priya Das,priya@example.com,Blender,Home,1,64.99,,mobile-banking,Dhaka,COMPLETED
+RF-1026,2025-06-04,Munir Ahmed,munir@example.com,Portable SSD,Electronics,1,119.00,9,card,Khulna,Completed
+RF-1027,2025-06-10,Raisa Khan,raisa@example.com,Marker Set,Stationery,2,14.50,0,cash,Dhaka,Pending
+RF-1028,2025-06-16,Fahim Rahman,fahim@example.com,Side Table,Furniture,1,88.00,8,bank_transfer,Barishal,Completed
+RF-1029,2025-06-22,Oishi Saha,oishi@example.com,Sneakers,Fashion,1,76.00,6,card,Chattogram,completed
+RF-1030,2025-06-27,Sakib Noor,sakib@example.com,Air Fryer,Home,1,110.00,10,mobile_banking,Dhaka,Completed
+RF-1031,2025-07-03,Mim Akter,mim@example.com,Tablet Stand,Electronics,2,26.00,0,card,Sylhet,Pending
+RF-1032,2025-07-09,Ridwan Islam,ridwan@example.com,Journal,Stationery,4,9.50,,cash,Dhaka,completed
+RF-1033,2025-07-15,Anika Tasnim,anika@example.com,Ergonomic Stool,Furniture,1,145.00,12,bank_transfer,Rajshahi,Completed
+RF-1034,2025-07-20,Saif Uddin,saif@example.com,Denim Jacket,Fashion,1,68.00,8,card,Dhaka,COMPLETED
+RF-1035,2025-07-28,Afreen Haque,afreen@example.com,Vacuum Cleaner,Home,1,155.00,20,mobile-banking,Khulna,Pending
+RF-1036,2025-08-02,Tahmid Hasan,tahmid@example.com,Bluetooth Speaker,Electronics,2,48.00,5,card,Dhaka,Completed
+RF-1037,2025-08-08,Ruba Ahmed,ruba@example.com,Planner,Stationery,3,13.00,0,cash,Chattogram,completed
+RF-1038,2025-08-13,Hasib Karim,hasib@example.com,Work Desk,Furniture,1,275.00,25,bank_transfer,Dhaka,Completed
+RF-1039,2025-08-19,Elma Chowdhury,elma@example.com,Scarf,Fashion,2,22.00,,card,Sylhet,Pending
+RF-1040,2025-08-26,Nabil Khan,nabil@example.com,Rice Cooker,Home,1,82.00,7,mobile_banking,Rangpur,Completed
+RF-1041,2025-09-01,Zarin Islam,zarin@example.com,Power Bank,Electronics,2,31.00,2,card,Dhaka,completed
+RF-1042,2025-09-07,Abrar Rahman,abrar@example.com,Pencil Case,Stationery,3,8.00,0,cash,Cumilla,Pending
+RF-1043,2025-09-14,Naima Jahan,naima@example.com,Drawer Unit,Furniture,1,132.00,12,bank_transfer,Chattogram,Completed
+RF-1044,2025-09-20,Rayhan Ali,rayhan@example.com,Formal Shirt,Fashion,2,38.00,6,card,Dhaka,Completed
+RF-1045,2025-09-27,Sohana Akter,sohana@example.com,Toaster,Home,1,41.50,,mobile-banking,Barishal,COMPLETED
+RF-1046,2025-10-03,Fuad Hossain,fuad@example.com,Mechanical Keyboard,Electronics,1,105.00,10,card,Dhaka,Completed
+RF-1047,2025-10-09,Trisha Sultana,trisha@example.com,Sticky Notes,Stationery,6,4.50,0,cash,Khulna,pending
+RF-1048,2025-10-15,Maruf Ahmed,maruf@example.com,Filing Cabinet,Furniture,1,195.00,15,bank_transfer,Dhaka,Completed
+RF-1049,2025-10-22,Ishrat Noor,ishrat@example.com,Handbag,Fashion,1,59.00,4,card,Sylhet,completed
+RF-1050,2025-10-29,Yasin Karim,yasin@example.com,Iron,Home,2,33.00,3,mobile_banking,Rajshahi,Completed
+RF-1051,2025-11-04,Invalid Email,,HDMI Cable,Electronics,1,12.00,0,card,Dhaka,Completed
+RF-1052,2025-11-08,Negative Quantity,badquantity@example.com,Notebook Set,Stationery,-2,12.00,0,cash,Dhaka,Completed
+RF-1053,2025-11-12,Missing Price,missingprice@example.com,Office Chair,Furniture,1,,0,card,Dhaka,Completed
+RF-1050,2025-11-16,Duplicate Order,duplicate@example.com,Desk Lamp,Home,1,45.00,0,cash,Dhaka,Completed
+RF-1055,not-a-date,Bad Date,baddate@example.com,Backpack,Fashion,1,54.00,0,card,Dhaka,Completed
