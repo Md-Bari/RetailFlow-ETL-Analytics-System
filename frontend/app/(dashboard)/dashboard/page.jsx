@@ -109,7 +109,7 @@ function AiInsightsPanel({ datasetId }) {
         <div className="flex items-center gap-2">
           <Sparkles size={20} className="text-purple-600" />
           <h2 className="font-semibold text-lg">Gemini AI Deep Insights</h2>
-          <span className="status status-success text-xs ml-2">Gemini 2.0 Flash</span>
+          <span className="status status-success text-xs ml-2">Gemini AI</span>
         </div>
         {!insights && !loading && <button onClick={handleGenerate} className="btn-primary py-1.5 px-4 text-sm">Generate AI Analysis</button>}
       </div>
@@ -118,9 +118,10 @@ function AiInsightsPanel({ datasetId }) {
       {error && <div className="text-red-500 text-sm bg-red-50 p-3 rounded-lg">{error}</div>}
       
       {insights && (
-        <div className="prose prose-sm max-w-none prose-p:leading-relaxed prose-headings:font-bold prose-headings:mb-2 prose-ul:my-2 prose-li:my-1 mt-4 p-4 bg-gray-50 rounded-xl whitespace-pre-wrap text-sm leading-6">
-          {insights}
-        </div>
+        <div 
+          className="prose prose-sm max-w-none prose-p:leading-relaxed prose-headings:font-bold prose-headings:mb-2 prose-ul:my-2 prose-li:my-1 mt-4 p-5 bg-gray-50 rounded-xl text-sm leading-6 border border-gray-100"
+          dangerouslySetInnerHTML={{ __html: insights }}
+        />
       )}
     </section>
   );

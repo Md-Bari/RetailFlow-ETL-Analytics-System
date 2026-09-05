@@ -24,15 +24,17 @@ export default function DashboardLayout({ children }) {
   if (!mounted) return null;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen bg-gray-50 flex print:bg-white print:block">
       {/* Sidebar Navigation */}
-      <Sidebar />
+      <div className="print:hidden">
+        <Sidebar />
+      </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 ml-64 flex flex-col h-screen">
+      <div className="flex-1 ml-64 flex flex-col h-screen print:ml-0 print:h-auto print:block">
         
         {/* Top Header */}
-        <header className="h-16 bg-white border-b flex items-center justify-between px-6 shrink-0 sticky top-0 z-10">
+        <header className="h-16 bg-white border-b flex items-center justify-between px-6 shrink-0 sticky top-0 z-10 print:hidden">
           <div className="flex items-center">
             <button className="p-2 -ml-2 text-blue-600 hover:bg-gray-100 rounded-lg transition-colors">
               <Menu size={24} />
@@ -49,8 +51,8 @@ export default function DashboardLayout({ children }) {
         </header>
 
         {/* Page Content */}
-        <main className="flex-1 overflow-auto p-6 bg-[#f4f6f9]">
-          <div className="max-w-7xl mx-auto w-full">
+        <main className="flex-1 overflow-auto p-6 bg-[#f4f6f9] print:bg-white print:p-0 print:overflow-visible">
+          <div className="max-w-7xl mx-auto w-full print:max-w-none">
             {children}
           </div>
         </main>

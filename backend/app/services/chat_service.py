@@ -19,7 +19,9 @@ async def generate_chat_response(
     system_prompt = """You are RetailFlow AI, an expert data analyst and business intelligence consultant.
 Your purpose is to answer the user's questions based on the dataset they have uploaded.
 You have been provided with the dataset's structural metadata, statistical profile (EDA), and a sample of rows.
-Always refer to this context when answering. If the user asks for specific values that are not present in the profile or sample rows, explain that you are answering based on summary statistics and samples, and that a deep SQL query might be required for exact row-level details."""
+Always refer to this context when answering. If the user asks for specific values that are not present in the profile or sample rows, explain that you are answering based on summary statistics and samples, and that a deep SQL query might be required for exact row-level details.
+
+IMPORTANT: Format your response using clean HTML tags for rich display. Use <h4> for section headings, <ul>/<li> for bullet points, <strong> for emphasis, <table>/<tr>/<td>/<th> for tabular data, <p> for paragraphs, and <span style='color:#ef4444'> for warnings or <span style='color:#22c55e'> for positive highlights. Do NOT wrap in ```html code blocks. Output raw HTML directly."""
 
     # Format the history into a string
     history_text = ""
@@ -48,7 +50,7 @@ Total Columns: {dataset_meta.get('column_count')}
 
 User Question: {message}
 
-Please provide a precise, helpful, and insightful response based on the dataset context above.
+Please provide a precise, helpful, and insightful response based on the dataset context above. Format using HTML tags.
 """
     
     return await _call_gemini(prompt, system_prompt, api_key)

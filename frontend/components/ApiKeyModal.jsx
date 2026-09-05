@@ -47,7 +47,7 @@ export default function ApiKeyModal() {
             </p>
             <input 
               type="password"
-              placeholder="AIza..."
+              placeholder="Gemini API Key..."
               value={key}
               onChange={e => setKey(e.target.value)}
               className="w-full rounded-[10px] border px-3 py-2 mb-4"

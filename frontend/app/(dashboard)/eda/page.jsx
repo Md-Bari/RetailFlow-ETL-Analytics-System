@@ -77,9 +77,10 @@ function EDAStudio() {
                 <Sparkles size={18} className="text-purple-600" />
                 <h2 className="font-semibold text-lg text-purple-900">Gemini Cleaning Advisor</h2>
               </div>
-              <div className="prose prose-sm text-purple-800 whitespace-pre-wrap leading-relaxed">
-                {data.ai_advice}
-              </div>
+              <div 
+                className="prose prose-sm text-purple-900 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: data.ai_advice }}
+              />
             </section>
             
             <PreprocessingControls datasetId={selected} />

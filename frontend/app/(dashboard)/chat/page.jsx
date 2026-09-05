@@ -59,7 +59,7 @@ export default function ChatPage() {
           </div>
           <div>
             <h2 className="font-bold text-gray-900 text-lg leading-tight">AI Data Assistant</h2>
-            <p className="text-xs text-gray-500">Powered by Gemini 2.0 Flash</p>
+            <p className="text-xs text-gray-500">Powered by Gemini AI</p>
           </div>
         </div>
 
@@ -111,12 +111,16 @@ export default function ChatPage() {
               {msg.role === "user" ? <User size={16} /> : msg.role === "system" ? <AlertCircle size={16} /> : <Bot size={16} />}
             </div>
             
-            <div className={`max-w-[75%] rounded-2xl px-5 py-3.5 text-sm leading-relaxed ${
-              msg.role === "user" ? "bg-gray-800 text-white rounded-tr-none" : 
-              msg.role === "system" ? "bg-red-50 text-red-700 border border-red-100 rounded-tl-none" :
+            <div className={`max-w-[80%] rounded-2xl px-5 py-3.5 text-sm leading-relaxed ${
+              msg.role === "user" ? "bg-gray-800 text-white rounded-tr-none whitespace-pre-wrap" : 
+              msg.role === "system" ? "bg-red-50 text-red-700 border border-red-100 rounded-tl-none whitespace-pre-wrap" :
               "bg-white border border-gray-100 shadow-sm text-gray-800 rounded-tl-none prose prose-sm prose-blue"
             }`}>
-              <div className="whitespace-pre-wrap">{msg.content}</div>
+              {msg.role === "assistant" ? (
+                <div dangerouslySetInnerHTML={{ __html: msg.content }} />
+              ) : (
+                msg.content
+              )}
             </div>
           </div>
         ))}
