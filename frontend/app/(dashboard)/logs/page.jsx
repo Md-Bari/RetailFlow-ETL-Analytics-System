@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import DataTable from "../../components/DataTable";
-import { ErrorState, LoadingState } from "../../components/PageState";
-import { getLogs } from "../../lib/api";
+import DataTable from "../../../components/DataTable";
+import { ErrorState, LoadingState } from "../../../components/PageState";
+import { getLogs } from "../../../lib/api";
 
 const date = value => value ? new Intl.DateTimeFormat("en", { dateStyle: "medium", timeStyle: "short" }).format(new Date(value)) : "—";
 const columns = [{ key: "filename", label: "Filename" }, { key: "total_rows", label: "Rows" }, { key: "valid_rows", label: "Processed" }, { key: "status", label: "Status", render: value => <span className={`status ${value === "Completed" ? "status-success" : "status-error"}`}>{value}</span> }, { key: "start_time", label: "Started", render: date }, { key: "end_time", label: "Finished", render: date }];

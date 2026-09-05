@@ -1,5 +1,4 @@
 import "./globals.css";
-import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "RetailFlow ETL Analytics",
@@ -9,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body><Navbar /><main>{children}</main></body>
+      <body><main>{children}</main></body>
     </html>
   );
 }

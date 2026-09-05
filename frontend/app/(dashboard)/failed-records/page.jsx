@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import DataTable from "../../components/DataTable";
-import { ErrorState, LoadingState } from "../../components/PageState";
-import { getDatasetProfile, getDatasets } from "../../lib/api";
+import DataTable from "../../../components/DataTable";
+import { ErrorState, LoadingState } from "../../../components/PageState";
+import { getDatasetProfile, getDatasets } from "../../../lib/api";
 
 export default function DataQualityPage() {
   const [datasets, setDatasets] = useState([]); const [selected, setSelected] = useState("");

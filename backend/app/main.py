@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .database import Base, engine
-from .routes import datasets, etl_logs, upload
+from .routes import datasets, etl_logs, upload, ai, eda, reports, chat
 from .utils.logger import configure_logging
 
 configure_logging()
@@ -27,3 +27,7 @@ def health():
 app.include_router(upload.router, prefix="/api")
 app.include_router(etl_logs.router, prefix="/api")
 app.include_router(datasets.router, prefix="/api")
+app.include_router(ai.router, prefix="/api")
+app.include_router(eda.router, prefix="/api")
+app.include_router(reports.router, prefix="/api")
+app.include_router(chat.router, prefix="/api")
